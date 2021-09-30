@@ -6,7 +6,7 @@
   "scripts": {
     "typeorm": "ts-node -r tsconfig-paths/register ./node_modules/typeorm/cli.js",
     "lint:fix": "eslint --fix src --ext ts,tsx",
-    "test": "jest"
+    "test": "jest --detectOpenHandles --runInBand"
   },
   "devDependencies": {
     "@types/jest": "^26.0.21",
